@@ -1,0 +1,14 @@
+# Videos CCTV del dataset (personas reales) y resultados generados: no se publican.
+dataset/*
+!dataset/.gitkeep
+Ouput/*
+!Ouput/.gitkeep
+
+# Estado local de Jupyter y Ultralytics.
+.ipynb_checkpoints/
+Modelo/.runtime/
+
+# Notebook anterior pendiente de confirmar su eliminación (ya unido en LAP01_Multitracking.ipynb).
+Prueba_LAP01_En_Vivo.ipynb
+
+__pycache__/

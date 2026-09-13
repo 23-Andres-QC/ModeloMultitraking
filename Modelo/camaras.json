@@ -1,0 +1,128 @@
+{
+  "mode": "visual_temporal",
+  "units": "m",
+  "notes": "Configuración exploratoria de las tres vistas del patio. Los solapes y offsets deben verificarse. Sin homografía no hay gating métrico ni X/Y reales.",
+  "cameras": {
+    "cam01": {
+      "timestamp_offset": 0.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "H": null,
+      "coverage_polygon": null,
+      "fit_image": [],
+      "fit_world": [],
+      "control_image": [],
+      "control_world": [],
+      "max_error_m": 0.75
+    },
+    "cam02": {
+      "timestamp_offset": 0.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "H": null,
+      "coverage_polygon": null,
+      "fit_image": [],
+      "fit_world": [],
+      "control_image": [],
+      "control_world": [],
+      "max_error_m": 0.75
+    },
+    "cam03": {
+      "timestamp_offset": 0.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "H": null,
+      "coverage_polygon": null,
+      "fit_image": [],
+      "fit_world": [],
+      "control_image": [],
+      "control_world": [],
+      "max_error_m": 0.75
+    }
+  },
+  "overlaps": [
+    [
+      "cam01",
+      "cam02"
+    ],
+    [
+      "cam01",
+      "cam03"
+    ],
+    [
+      "cam02",
+      "cam03"
+    ]
+  ],
+  "transitions": [
+    {
+      "from": "cam01",
+      "to": "cam02",
+      "t_min_s": 0.0,
+      "t_max_s": 30.0,
+      "max_distance_m": 30.0,
+      "min_direction_cos": -0.5
+    },
+    {
+      "from": "cam01",
+      "to": "cam03",
+      "t_min_s": 0.0,
+      "t_max_s": 30.0,
+      "max_distance_m": 30.0,
+      "min_direction_cos": -0.5
+    },
+    {
+      "from": "cam02",
+      "to": "cam01",
+      "t_min_s": 0.0,
+      "t_max_s": 30.0,
+      "max_distance_m": 30.0,
+      "min_direction_cos": -0.5
+    },
+    {
+      "from": "cam02",
+      "to": "cam03",
+      "t_min_s": 0.0,
+      "t_max_s": 30.0,
+      "max_distance_m": 30.0,
+      "min_direction_cos": -0.5
+    },
+    {
+      "from": "cam03",
+      "to": "cam01",
+      "t_min_s": 0.0,
+      "t_max_s": 30.0,
+      "max_distance_m": 30.0,
+      "min_direction_cos": -0.5
+    },
+    {
+      "from": "cam03",
+      "to": "cam02",
+      "t_min_s": 0.0,
+      "t_max_s": 30.0,
+      "max_distance_m": 30.0,
+      "min_direction_cos": -0.5
+    }
+  ],
+  "association": {
+    "sample_interval_s": 0.4,
+    "min_samples": 3,
+    "threshold": 0.78,
+    "appearance_gate": 0.7,
+    "ambiguity_margin": 0.04,
+    "candidate_window_s": 90.0,
+    "tracklet_gap_s": 2.0,
+    "sync_tolerance_s": 0.15,
+    "overlap_distance_m": 1.5,
+    "max_speed_m_s": 4.0,
+    "min_conf": 0.55,
+    "min_height": 40,
+    "max_occlusion": 0.2
+  }
+}
