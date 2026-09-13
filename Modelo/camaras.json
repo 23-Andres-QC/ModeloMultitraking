@@ -1,7 +1,7 @@
 {
   "mode": "visual_temporal",
   "units": "m",
-  "notes": "Configuración exploratoria de las tres vistas del patio. Los solapes y offsets deben verificarse. Sin homografía no hay gating métrico ni X/Y reales.",
+  "notes": "Tres cámaras con vistas solapadas del mismo recinto. Umbrales de asociación calibrados el 2026-09-13 con 70 tracklets etiquetados a mano (11 personas) de los videos completos: precisión 1.00 y recall 0.83 en pares de tracklets. Sin homografía no hay gating métrico ni X/Y reales.",
   "cameras": {
     "cam01": {
       "timestamp_offset": 0.0,
@@ -65,7 +65,7 @@
       "from": "cam01",
       "to": "cam02",
       "t_min_s": 0.0,
-      "t_max_s": 30.0,
+      "t_max_s": 60.0,
       "max_distance_m": 30.0,
       "min_direction_cos": -0.5
     },
@@ -73,7 +73,7 @@
       "from": "cam01",
       "to": "cam03",
       "t_min_s": 0.0,
-      "t_max_s": 30.0,
+      "t_max_s": 60.0,
       "max_distance_m": 30.0,
       "min_direction_cos": -0.5
     },
@@ -81,7 +81,7 @@
       "from": "cam02",
       "to": "cam01",
       "t_min_s": 0.0,
-      "t_max_s": 30.0,
+      "t_max_s": 60.0,
       "max_distance_m": 30.0,
       "min_direction_cos": -0.5
     },
@@ -89,7 +89,7 @@
       "from": "cam02",
       "to": "cam03",
       "t_min_s": 0.0,
-      "t_max_s": 30.0,
+      "t_max_s": 60.0,
       "max_distance_m": 30.0,
       "min_direction_cos": -0.5
     },
@@ -97,7 +97,7 @@
       "from": "cam03",
       "to": "cam01",
       "t_min_s": 0.0,
-      "t_max_s": 30.0,
+      "t_max_s": 60.0,
       "max_distance_m": 30.0,
       "min_direction_cos": -0.5
     },
@@ -105,18 +105,23 @@
       "from": "cam03",
       "to": "cam02",
       "t_min_s": 0.0,
-      "t_max_s": 30.0,
+      "t_max_s": 60.0,
       "max_distance_m": 30.0,
       "min_direction_cos": -0.5
     }
   ],
   "association": {
     "sample_interval_s": 0.4,
-    "min_samples": 3,
-    "threshold": 0.78,
-    "appearance_gate": 0.7,
-    "ambiguity_margin": 0.04,
+    "min_samples": 5,
+    "threshold": 0.6,
+    "average_threshold": 0.55,
+    "same_camera_threshold": 0.7,
+    "ambiguity_margin": 0.05,
+    "mutual_best": true,
+    "split_threshold": 0.4,
+    "split_strikes": 2,
     "candidate_window_s": 90.0,
+    "reentry_window_s": 120.0,
     "tracklet_gap_s": 2.0,
     "sync_tolerance_s": 0.15,
     "overlap_distance_m": 1.5,

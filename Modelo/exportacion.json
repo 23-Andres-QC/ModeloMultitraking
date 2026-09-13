@@ -1,20 +1,16 @@
 {
   "version": "2.0",
-  "source": "Modelo_Unico/LAP01.ipynb + aerovision/",
-  "notebook_sha256": "3e3a71aa72a82817a3c10e11bdfaef54492bd93ce94e76fbaa8e4982641685f3",
+  "fecha": "2026-09-13T15:49:14-05:00",
+  "notebook": "LAP01_Multitracking.ipynb",
+  "notebook_sha256": "70d0d0c5a175ae44297fddc35ffaf43fbe5f17c3e4f42319cb5b83cd3c7de9da",
+  "modo_multicamara": "visual_temporal",
   "files_sha256": {
-    "aerovision/geometria.py": "0aaaeec1209caf92d334e3f97c37202472680190c56d439e5db21924ea946ad6",
-    "aerovision/__init__.py": "00c723271aa8a03f766e6663200730fe1e2cf112bf483716a0d34fd6dc9a7072",
-    "aerovision/runtime.py": "e73bc98b522bdfabdf3921ffa6459e9f28ffb2cc2c321b289faada7d1726f835",
-    "aerovision/multicamara.py": "71c9ff1712b9d6a38d67ed345eb155d6d3d18f8acf8ba93fa6afcde578f5033d",
-    "aerovision/notebook.py": "7e803c79602c665cc22995f55dcec542605246393afe3ba5edff123605609630",
-    "aerovision/tracker_lap01.py": "7cc6f63ef21d3b0e0bf03a9bf6bb9d55aad90305b14e502c27e995a4beaa1d8c",
-    "modelo/resnet18-f37072fd.pth": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
-    "modelo/yolo26m.pt": "401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
-    "modelo/yolo26s-reid.onnx": "1cfff339245e6564f64e9e9a985b11fa55d5be939d1ac72da64ac5fcd9efa271",
-    "modelo/config_lap01.json": "52b26466081740d86a866a71f7176417937e5f57c9e221e71641cc748d891e96"
+    "Modelo/resnet18-f37072fd.pth": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "Modelo/yolo26m.pt": "401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
+    "Modelo/yolo26s-reid.onnx": "1cfff339245e6564f64e9e9a985b11fa55d5be939d1ac72da64ac5fcd9efa271",
+    "Modelo/config_lap01.json": "52b26466081740d86a866a71f7176417937e5f57c9e221e71641cc748d891e96",
+    "Modelo/camaras.json": "de7587de51a0a8626c899adc94a81a0267b192a1d80b382a40200b0fb3af9e12"
   },
-  "camera_config_sha256": "de7587de51a0a8626c899adc94a81a0267b192a1d80b382a40200b0fb3af9e12",
   "packages": {
     "torch": "2.14.0",
     "torchvision": "0.29.0",
@@ -22,6 +18,7 @@
     "numpy": "2.5.1",
     "scipy": "1.18.1",
     "opencv-python": "5.0.0.93",
-    "onnxruntime": "1.30.0"
+    "onnxruntime": "1.30.0",
+    "pandas": "3.0.5"
   }
 }
