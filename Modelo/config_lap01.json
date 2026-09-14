@@ -3,7 +3,8 @@
     "conf": 0.2,
     "display_conf": 0.3,
     "imgsz": 640,
-    "iou": 0.5
+    "iou": 0.5,
+    "fp16": false
   },
   "tracker": {
     "max_age": 120,
@@ -18,7 +19,8 @@
     "active_motion_gate": 0.55,
     "active_iou_gate": 0.12,
     "min_person_height": 18,
-    "reid_gate": 0.8
+    "reid_gate": 0.8,
+    "appearance_interval": 5
   },
   "appearance": {
     "deep_weight": 0.2,
@@ -38,6 +40,7 @@
     "weights": "yolo26s-reid.onnx",
     "imgsz": 448,
     "threads": 2,
-    "batch_size": 8
+    "batch_size": 8,
+    "device": "auto"
   }
 }

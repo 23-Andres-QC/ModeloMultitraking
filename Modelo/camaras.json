@@ -1,7 +1,7 @@
 {
   "mode": "visual_temporal",
   "units": "m",
-  "notes": "Tres cámaras con vistas solapadas del mismo recinto. Umbrales de asociación calibrados el 2026-09-13 con 70 tracklets etiquetados a mano (11 personas) de los videos completos: precisión 1.00 y recall 0.83 en pares de tracklets. Sin homografía no hay gating métrico ni X/Y reales.",
+  "notes": "Tres cámaras con vistas solapadas del mismo recinto. Umbrales de asociación calibrados el 2026-09-13 con 70 tracklets etiquetados a mano (11 personas) de los videos completos. Sin homografía no hay gating métrico ni X/Y reales.",
   "cameras": {
     "cam01": {
       "timestamp_offset": 0.0,
@@ -112,7 +112,12 @@
   ],
   "association": {
     "sample_interval_s": 0.4,
+    "tracklet_views_target": 10,
+    "identity_views_target": 40,
+    "verify_interval_s": 2.0,
     "min_samples": 5,
+    "min_query_samples": 4,
+    "min_identity_duration_s": 2.0,
     "threshold": 0.6,
     "average_threshold": 0.55,
     "same_camera_threshold": 0.7,
