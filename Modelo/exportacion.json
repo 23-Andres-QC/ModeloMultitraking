@@ -1,15 +1,15 @@
 {
   "version": "2.0",
-  "fecha": "2026-09-13T15:49:14-05:00",
+  "fecha": "2026-09-13T20:17:23-05:00",
   "notebook": "LAP01_Multitracking.ipynb",
-  "notebook_sha256": "70d0d0c5a175ae44297fddc35ffaf43fbe5f17c3e4f42319cb5b83cd3c7de9da",
+  "notebook_sha256": "ec2217c0a0cdcb9e0b291366e4727a655b0d02088ff2d0a366d18625ee724e40",
   "modo_multicamara": "visual_temporal",
   "files_sha256": {
     "Modelo/resnet18-f37072fd.pth": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
     "Modelo/yolo26m.pt": "401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
     "Modelo/yolo26s-reid.onnx": "1cfff339245e6564f64e9e9a985b11fa55d5be939d1ac72da64ac5fcd9efa271",
-    "Modelo/config_lap01.json": "52b26466081740d86a866a71f7176417937e5f57c9e221e71641cc748d891e96",
-    "Modelo/camaras.json": "de7587de51a0a8626c899adc94a81a0267b192a1d80b382a40200b0fb3af9e12"
+    "Modelo/config_lap01.json": "9de2f2bfa5fff9b5300a457a4f6fec577c905a782c899ad747dae0a6e18c0020",
+    "Modelo/camaras.json": "eb4929862f1625e49c0520b8843d2b4fc1a7eaea45ed457d60d71fe0620b6ced"
   },
   "packages": {
     "torch": "2.14.0",

@@ -15,7 +15,11 @@
       "fit_world": [],
       "control_image": [],
       "control_world": [],
-      "max_error_m": 0.75
+      "max_error_m": 0.75,
+      "principal_point": [
+        507.0,
+        360.0
+      ]
     },
     "cam02": {
       "timestamp_offset": 0.0,
@@ -29,7 +33,11 @@
       "fit_world": [],
       "control_image": [],
       "control_world": [],
-      "max_error_m": 0.75
+      "max_error_m": 0.75,
+      "principal_point": [
+        504.0,
+        360.0
+      ]
     },
     "cam03": {
       "timestamp_offset": 0.0,
@@ -43,7 +51,11 @@
       "fit_world": [],
       "control_image": [],
       "control_world": [],
-      "max_error_m": 0.75
+      "max_error_m": 0.75,
+      "principal_point": [
+        545.0,
+        273.0
+      ]
     }
   },
   "overlaps": [
