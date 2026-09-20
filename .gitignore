@@ -8,7 +8,9 @@ Ouput/*
 .ipynb_checkpoints/
 Modelo/.runtime/
 
-# Notebook anterior pendiente de confirmar su eliminación (ya unido en LAP01_Multitracking.ipynb).
-Prueba_LAP01_En_Vivo.ipynb
-
 __pycache__/
+
+# Pesos preentrenados (CLIP, SegFormer): superan el limite de 100 MB de GitHub.
+# Se vuelven a descargar de HuggingFace; los config/tokenizer si se versionan.
+Modelo/clip_genero/*.safetensors
+Modelo/segformer_piso/*.safetensors
